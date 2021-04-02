@@ -55,6 +55,7 @@ public class WebDriverFactory extends Listeners {
 //		System.setProperty("webdriver.chrome.driver", "‪E:\\\\SELENIUM\\\\Selenium IDE\\\\Driver\\\\chrome\\\\chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\\\chrome\\\\chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless");
 		options.setExperimentalOption("useAutomationExtension", false);
 		options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
 		options.merge(cap);
