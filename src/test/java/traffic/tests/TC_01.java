@@ -179,10 +179,11 @@ public class TC_01 {
 //	}
 		
 		// SOCXO
-		
+		String a;
 //		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//li[@id='blurb_container'])[1]"))).click();
-		webdriver.get().findElement(By.xpath("(//li[@id='blurb_container'])[1]")).click();
+		a =webdriver.get().findElement(By.xpath("//ul[@class='list-group no-borders leaderboard-scrollbar']//div[@class='lbd-name'][1]")).getText();
 		System.out.println("Finished");
+		System.out.println("Name : "+a);
 		
 		webdriver.get().quit();
 	}
