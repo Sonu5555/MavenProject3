@@ -187,6 +187,7 @@ public class TC_01 {
 		
 		webdriver.get().quit();
 	}
+	 @AfterMethod
 	public void after_test() throws IOException  
 	{  
 
