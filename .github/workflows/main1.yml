@@ -35,5 +35,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Step 3 _ Build with Maven
         run: mvn -B package --file pom.xml
-          echo Add other actions to build,
-          echo test, and deploy your project.
+
